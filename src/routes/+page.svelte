@@ -10,19 +10,16 @@ import ButtonComponent from '$lib/ButtonComponent.svelte';
             <li class="mx-6"><a href="blog">Blog</a></li>
             <li class="mx-6"><a href="about">About</a></li>
             <li class="mx-6"><a href="contact">Contact</a></li>
-            <li>|</li>
             <li class="mx-6"><a href="https://www.linkedin.com/in/yvo-zwijnenburg/"><img class="max-h-12" src="/img/linkedin.png" alt="linkedin logo"></a></li>
-            <div class="flex flex-row gap-4">
-            <li><ButtonComponent isGhost={true} url="/" text="Sign up"/></li>
-            <li><ButtonComponent isGhost={false} url="/" text="Sign in"/></li>
-            </div>
+            <li class="mr-6">|</li>
+            <li class="flex flex-row pr-2 gap-4"><ButtonComponent isGhost={true} url="/" text="Sign up"/></li>
+            <li class="flex flex-row pr-2 gap-4"><ButtonComponent isGhost={false} url="/" text="Sign in"/></li>
         </ul>
     </nav>
 </div>
 <body class="bg-neutral-800 text-neutral-200">
 <div class="flex items-center justify-center min-h-screen p-4">
     <div class="flex flex-col md:flex-row items-center max-w-6xl p-6 rounded-lg">
-        <!-- Text Container -->
         <div class="flex-1 text-center md:text-left mb-6 md:mb-0">
             <h1 class="font-poppins text-7xl font-bold mb-4">Yvo Zwijnenburg</h1>
             <h2 class="font-poppins text-5xl text-neutral-400 font-bold mb-4">Software Developer</h2>
@@ -34,7 +31,6 @@ import ButtonComponent from '$lib/ButtonComponent.svelte';
                 <ButtonComponent isGhost={false} url="contact" text="Contact me"/>
             </div>
         </div>
-        <!-- Image Container -->
         <div class="flex-1 flex justify-center md:justify-end">
             <img class="rounded-full border-4 border-neutral-200" src="/img/roy.png" alt="roy">
         </div>

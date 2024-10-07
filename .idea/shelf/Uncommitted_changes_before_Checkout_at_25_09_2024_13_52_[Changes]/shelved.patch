@@ -1,0 +1,32 @@
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><component name=\"InspectionProjectProfileManager\">\r\n  <profile version=\"1.0\">\r\n    <option name=\"myName\" value=\"Project Default\" />\r\n    <inspection_tool class=\"Eslint\" enabled=\"true\" level=\"WARNING\" enabled_by_default=\"true\" />\r\n  </profile>\r\n</component>
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+--- a/.idea/inspectionProfiles/Project_Default.xml	(revision 130bf8b793e2038644a252050c82a7baf924e89f)
++++ b/.idea/inspectionProfiles/Project_Default.xml	(date 1727257245425)
+@@ -2,5 +2,22 @@
+   <profile version="1.0">
+     <option name="myName" value="Project Default" />
+     <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
++    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
++      <option name="myValues">
++        <value>
++          <list size="8">
++            <item index="0" class="java.lang.String" itemvalue="nobr" />
++            <item index="1" class="java.lang.String" itemvalue="noembed" />
++            <item index="2" class="java.lang.String" itemvalue="comment" />
++            <item index="3" class="java.lang.String" itemvalue="noscript" />
++            <item index="4" class="java.lang.String" itemvalue="embed" />
++            <item index="5" class="java.lang.String" itemvalue="script" />
++            <item index="6" class="java.lang.String" itemvalue="div" />
++            <item index="7" class="java.lang.String" itemvalue="li" />
++          </list>
++        </value>
++      </option>
++      <option name="myCustomValuesEnabled" value="true" />
++    </inspection_tool>
+   </profile>
+ </component>
+\ No newline at end of file
