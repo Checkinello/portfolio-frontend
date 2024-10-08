@@ -3,6 +3,7 @@
 	import { apiBlogs, isLoading, error, loadBlogs } from './store';
 	import ButtonComponent from '$lib/ButtonComponent.svelte';
 	import { writable } from 'svelte/store';
+	import Navbar from '$lib/Navbar.svelte';
 
 	interface BlogPost {
 		id: number;
@@ -23,29 +24,7 @@
 	};
 </script>
 
-<div class="bg-neutral-800 text-neutral-200 font-po">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-neutral-800">
-		<ul class="flex flex-row justify-end h-16 text-xl items-center nav nav-tabs nav-stacked bg-neutral-800">
-			<li class="mx-6"><a href="/">Home</a></li>
-			<li class="mx-6"><a href="reviews">Reviews</a></li>
-			<li class="mx-6"><a class="underline" href="blog">Blog</a></li>
-			<li class="mx-6"><a href="about">About</a></li>
-			<li class="mx-6"><a href="contact">Contact</a></li>
-			<li class="mx-6">
-				<a href="https://www.linkedin.com/in/yvo-zwijnenburg/">
-					<img class="max-h-12" src="/img/linkedin.png" alt="linkedin logo" />
-				</a>
-			</li>
-			<li class="mr-6">|</li>
-			<li class="flex flex-row pr-2 gap-4">
-				<ButtonComponent isGhost={true} url="/" text="Sign up" />
-			</li>
-			<li class="flex flex-row pr-2 gap-4">
-				<ButtonComponent isGhost={false} url="/" text="Sign in" />
-			</li>
-		</ul>
-	</nav>
-</div>
+<Navbar />
 
 <body class="bg-neutral-800 text-neutral-200">
 <div class="container flex flex-row  overflow-auto">

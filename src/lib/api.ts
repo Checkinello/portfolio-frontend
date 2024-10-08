@@ -4,4 +4,6 @@ export const API_ENDPOINTS = {
 	blogs: `${BASE_URL}/blogs`,
 	reviews: `${BASE_URL}/reviews`,
 	contactForms: `${BASE_URL}/contactForm`,
+	user: `${BASE_URL}/user`,
+	login: `${BASE_URL}/login`,
 };
