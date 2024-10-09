@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="829193b4-b6eb-49db-b59c-4b0f23f4e3d1" name="Changes" comment="Made create for blogs front end">
-      <change afterPath="$PROJECT_DIR$/src/lib/Navbar.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/User/Login/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/User/Register/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/User/store.ts" afterDir="false" />
+    <list default="true" id="829193b4-b6eb-49db-b59c-4b0f23f4e3d1" name="Changes" comment="Made Register and login and made component for Navbar.">
+      <change afterPath="$PROJECT_DIR$/src/lib/authStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/+server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/+server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ButtonComponent.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ButtonComponent.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/contact/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contact/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/reviews/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/reviews/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/User/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/User/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/create/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/create/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/IB-5-read-blogs-front-end" />
+        <entry key="$PROJECT_DIR$" value="feature/IB-36-make-login-and-sign-up-for-users" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,21 +43,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/IB-36-make-login-and-sign-up-for-users&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Kompas/portfolio_front&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Kompas\\portfolio_front\\node_modules\\prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Kompas\\portfolio_front\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/IB-42-post-update-and-delete-blogs",
+    "last_opened_file_path": "C:/Kompas/portfolio_front",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Kompas\\portfolio_front\\node_modules\\prettier",
+    "ts.external.directory.path": "C:\\Kompas\\portfolio_front\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Kompas\portfolio_front\src\routes\User" />
@@ -95,7 +88,7 @@
       <workItem from="1727266255833" duration="323000" />
       <workItem from="1727705322803" duration="29371000" />
       <workItem from="1728287898759" duration="2923000" />
-      <workItem from="1728296251464" duration="22396000" />
+      <workItem from="1728296251464" duration="29059000" />
     </task>
     <task id="LOCAL-00001" summary="Made create for blogs front end">
       <option name="closed" value="true" />
@@ -105,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728288250927</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Made Register and login and made component for Navbar.">
+      <option name="closed" value="true" />
+      <created>1728392293240</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728392293240</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +178,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wip" />
     <MESSAGE value="Made create for blogs front end" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made create for blogs front end" />
+    <MESSAGE value="Made Register and login and made component for Navbar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Register and login and made component for Navbar." />
   </component>
 </project>

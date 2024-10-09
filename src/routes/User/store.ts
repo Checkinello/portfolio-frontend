@@ -8,6 +8,7 @@ export const user = writable<User | null>(null);
 export const authToken = writable<string | null>(browser ? getCookie('token') : null);
 export const isLoading = writable<boolean>(false);
 export const error = writable<string | null>(null);
+export let loggedIn = false;
 
 interface User {
 	id: number;
@@ -29,6 +30,7 @@ interface RegisterUserData {
 	password_confirmation: string;
 }
 
+
 function setCookie(name: string, value: string, days: number) {
 	const expires = new Date(Date.now() + days * 864e5).toUTCString();
 	document.cookie = `${name}=${value}; expires=${expires}; path=/; SameSite=Lax`;
@@ -43,6 +45,10 @@ function getCookie(name: string): string | null {
 		if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
 	}
 	return null;
+}
+
+export async function checkCookie(){
+	loggedIn = await getCookie('token') != null;
 }
 
 function deleteCookie(name: string) {
@@ -79,6 +85,9 @@ export async function loginUser(credentials: UserCredentials) {
 
 		authToken.set(loggedInUser.token);
 
+		loggedIn = true;
+
+
 		console.log('Login successful:', loggedInUser.token);
 
 		goto('/');
@@ -96,6 +105,7 @@ export function logoutUser() {
 
 	authToken.set(null);
 	deleteCookie('token');
-
+	loggedIn = false;
 	console.log('User logged out');
 }
+

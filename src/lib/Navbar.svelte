@@ -1,17 +1,16 @@
 <script lang="ts">
 	import ButtonComponent from '$lib/ButtonComponent.svelte';
 	import { logoutUser } from '../routes/User/store';
-	import { authToken } from '../routes/User/store';
-
-
-
-	let loggedIn = false;
-
-	$: loggedIn = !!$authToken;
-
+	import { isLoggedIn, checkAuthentication } from '$lib/authStore';
+	import { onMount } from 'svelte';
 	const handleLogout = () => {
 		logoutUser();
+		checkAuthentication();
 	};
+
+	onMount(() => {
+		checkAuthentication();
+	});
 </script>
 
 <div class="bg-neutral-800 text-neutral-200 font-po">
@@ -29,7 +28,7 @@
 			</li>
 			<li class="mr-6">|</li>
 
-			{#if loggedIn}
+			{#if $isLoggedIn}
 				<li class="flex flex-row pr-2 gap-4">
 					<button on:click={handleLogout} class="bg-neutral-200 text-neutral-800 p-2 font-bold rounded-2xl">Log Out</button>
 				</li>
