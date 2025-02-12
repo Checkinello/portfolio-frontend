@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="829193b4-b6eb-49db-b59c-4b0f23f4e3d1" name="Changes" comment="Made Register and login and made component for Navbar.">
-      <change afterPath="$PROJECT_DIR$/src/lib/authStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Navbar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/User/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/User/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/blog/create/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/create/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +29,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Checkinello"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Checkinello/portfolio-frontend.git",
+    "accountId": "420914b5-07e9-469e-a82f-d7a9c27ae1ba"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -46,7 +55,6 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/IB-42-post-update-and-delete-blogs",
     "last_opened_file_path": "C:/Kompas/portfolio_front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -179,6 +187,7 @@
     <MESSAGE value="wip" />
     <MESSAGE value="Made create for blogs front end" />
     <MESSAGE value="Made Register and login and made component for Navbar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made Register and login and made component for Navbar." />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
 </project>

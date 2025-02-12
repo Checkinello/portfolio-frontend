@@ -77,18 +77,19 @@ export async function loginUser(credentials: UserCredentials) {
 	error.set(null);
 
 	try {
-		const loggedInUser = await POST<{ user: User; token: string }>(API_ENDPOINTS.login, credentials);
+		const loggedInUser = await POST<{ user: User; BearerToken: string }>(API_ENDPOINTS.login, credentials);
+
 
 		user.set(loggedInUser.user);
+	  console.log(loggedInUser);
+		setCookie('token', loggedInUser.BearerToken, 7);
 
-		setCookie('token', loggedInUser.token, 7);
-
-		authToken.set(loggedInUser.token);
+		authToken.set(loggedInUser.BearerToken);
 
 		loggedIn = true;
 
 
-		console.log('Login successful:', loggedInUser.token);
+		console.log('Login successful:', loggedInUser.BearerToken);
 
 		goto('/');
 	} catch (err) {
