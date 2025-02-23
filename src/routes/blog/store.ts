@@ -16,6 +16,7 @@ interface BlogPost {
 export const apiBlogs = writable<BlogPost[]>([]);
 export const isLoading = writable<boolean>(false);
 export const error = writable<string | null>(null);
+//Dit maakt alle standaard CRUD functies in een functie die je kan gebruiken voor de CRUD van Blogs.
 
 export async function loadBlogs() {
 	isLoading.set(true);

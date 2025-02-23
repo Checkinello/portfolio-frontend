@@ -4,7 +4,7 @@
 
 	let email = '';
 	let password = '';
-
+	// ingevulde data invoeren en funtie in store.ts aanroepen
 	const login = async () => {
 		if (email && password) {
 			await loginUser({ email, password });

@@ -1,3 +1,4 @@
+<!--Standaard button component met een Call to action en ghost variant.-->
 <script lang="ts">
     export let url: string;
     export let text: string;

@@ -1,5 +1,7 @@
 import { getCookie } from '$lib/authStore';
 
+// Deze pagia maakt de CRUD functies. de DELETE en PUT functie geven ook de cookies mee
+
 export async function GET<T>(url: string, options: RequestInit = {}): Promise<T> {
 	try {
 		const response = await fetch(url, {
