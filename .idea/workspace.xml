@@ -7,7 +7,21 @@
     <list default="true" id="829193b4-b6eb-49db-b59c-4b0f23f4e3d1" name="Changes" comment="Made Register and login and made component for Navbar.">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/+server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/+server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ButtonComponent.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ButtonComponent.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/authStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/authStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/User/Login/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/User/Login/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/User/Register/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/User/Register/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/User/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/User/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/blog/create/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/create/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/update/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/update/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/contact/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contact/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/reviews/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/reviews/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,23 +38,23 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/IB-36-make-login-and-sign-up-for-users" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Checkinello"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Checkinello&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Checkinello/portfolio-frontend.git",
-    "accountId": "420914b5-07e9-469e-a82f-d7a9c27ae1ba"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Checkinello/portfolio-frontend.git&quot;,
+    &quot;accountId&quot;: &quot;420914b5-07e9-469e-a82f-d7a9c27ae1ba&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -52,20 +66,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Kompas/portfolio_front",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Kompas\\portfolio_front\\node_modules\\prettier",
-    "ts.external.directory.path": "C:\\Kompas\\portfolio_front\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Redesign-structure-to-be-more-like-the-atomic-design&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Kompas/portfolio_front&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Kompas\\portfolio_front\\node_modules\\prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Kompas\\portfolio_front\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Kompas\portfolio_front\src\routes\User" />
@@ -97,6 +112,9 @@
       <workItem from="1727705322803" duration="29371000" />
       <workItem from="1728287898759" duration="2923000" />
       <workItem from="1728296251464" duration="29059000" />
+      <workItem from="1739354521071" duration="3133000" />
+      <workItem from="1739534755232" duration="1560000" />
+      <workItem from="1740309939626" duration="6652000" />
     </task>
     <task id="LOCAL-00001" summary="Made create for blogs front end">
       <option name="closed" value="true" />
@@ -171,7 +189,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/feature/IB-5-read-blogs-front-end" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>

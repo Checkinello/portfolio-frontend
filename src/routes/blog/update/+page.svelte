@@ -17,13 +17,13 @@
 	let updatedBlogTitle = '';
 	let updatedBlogDescription = '';
 	let blog: BlogPost | null = null;
-
+	// Id pakken zodat je de correcte blog aanpast
 	$: {
 		const queryParams = new URLSearchParams($page.url.search);
 		const id = queryParams.get('id');
 		blogId = id ? parseInt(id) : null;
 	}
-
+	// content can blog laden om aan te passen
 	onMount(async () => {
 		await loadBlogs();
 		const blogs = get(apiBlogs);
@@ -35,7 +35,7 @@
 			}
 		}
 	});
-
+	// correcte waarden meegeven om naar de UPDATE functie te sturen en de store.ts
 	const handleUpdateBlog = async () => {
 		if (blogId && updatedBlogTitle && updatedBlogDescription) {
 			await updateBlog(blogId, {

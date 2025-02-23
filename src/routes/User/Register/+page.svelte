@@ -7,7 +7,7 @@
 	let password = '';
 	let password_confirmation = '';
 
-
+	// ingevulde data invoeren en funtie in store.ts aanroepen
 	const submitRegistration = async () => {
 		await registerUser({ name, email, password, password_confirmation });
 	};

@@ -28,7 +28,7 @@
 		{#if $error}
 			<p class="text-center text-red-500 mb-4">{$error}</p>
 		{/if}
-
+		<!--functie aanroepen om een blog aan te maken-->
 		<form on:submit|preventDefault={handleCreateBlog}>
 			<div class="flex items-center border-b border-neutral-500 py-2 mb-6">
 				<i class="fas fa-heading text-neutral-400 mr-3"></i>

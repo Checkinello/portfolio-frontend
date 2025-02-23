@@ -1,4 +1,4 @@
-// src/lib/authStore.ts
+// Hier pakt het de token en stopt het in een cookie om op andere plekken te gebruiken als verificatie.
 import { writable } from 'svelte/store';
 
 export const isLoggedIn = writable(false);

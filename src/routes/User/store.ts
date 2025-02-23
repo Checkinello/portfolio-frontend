@@ -30,12 +30,12 @@ interface RegisterUserData {
 	password_confirmation: string;
 }
 
-
+// functie om een cookie te maken
 function setCookie(name: string, value: string, days: number) {
 	const expires = new Date(Date.now() + days * 864e5).toUTCString();
 	document.cookie = `${name}=${value}; expires=${expires}; path=/; SameSite=Lax`;
 }
-
+// cookie ophalen
 function getCookie(name: string): string | null {
 	const nameEQ = name + "=";
 	const ca = document.cookie.split(';');
@@ -47,14 +47,12 @@ function getCookie(name: string): string | null {
 	return null;
 }
 
-export async function checkCookie(){
-	loggedIn = await getCookie('token') != null;
-}
-
+// automatisch uitloggen na een bepaalde tijd
 function deleteCookie(name: string) {
 	document.cookie = name + '=; Max-Age=-99999999;';
 }
 
+// gebruiker aanmaken
 export async function registerUser(newUser: RegisterUserData) {
 	isLoading.set(true);
 	error.set(null);
@@ -79,7 +77,7 @@ export async function loginUser(credentials: UserCredentials) {
 	try {
 		const loggedInUser = await POST<{ user: User; BearerToken: string }>(API_ENDPOINTS.login, credentials);
 
-
+		// BearerToken mee geven als cookie
 		user.set(loggedInUser.user);
 	  console.log(loggedInUser);
 		setCookie('token', loggedInUser.BearerToken, 7);
@@ -100,7 +98,7 @@ export async function loginUser(credentials: UserCredentials) {
 		isLoading.set(false);
 	}
 }
-
+// token verwijderen uit cookie om uit te loggen
 export function logoutUser() {
 	user.set(null);
 

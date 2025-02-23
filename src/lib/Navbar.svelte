@@ -1,3 +1,4 @@
+<!--Navbar component-->
 <script lang="ts">
 	import ButtonComponent from '$lib/ButtonComponent.svelte';
 	import { logoutUser } from '../routes/User/store';

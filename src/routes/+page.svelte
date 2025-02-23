@@ -1,4 +1,5 @@
- <script lang="ts">
+<!--Hoofd pagina-->
+<script lang="ts">
         import ButtonComponent from '$lib/ButtonComponent.svelte';
         import Navbar from '$lib/Navbar.svelte';
 </script>
